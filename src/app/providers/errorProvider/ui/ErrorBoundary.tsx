@@ -1,4 +1,5 @@
 import React, { ErrorInfo, ReactNode, Suspense } from 'react';
+import { ErrorPage } from '@/pages/ErrorPage';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -33,7 +34,7 @@ class ErrorBoundary extends React.Component<
     if (hasError) {
       return (
         <Suspense fallback="">
-          <h1>Oops! Something went wrong...</h1>
+          <ErrorPage />
         </Suspense>
       );
     }

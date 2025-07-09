@@ -1,6 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { MainLayout } from '@/shared/ui/MainLayout';
 import { NotFoundPage } from '@/pages/NotFoundPage';
+import { Suspense } from 'react';
+import { PageLoader } from '@/shared/ui/PageLoader';
+import { HomePage } from '@/pages/HomePage';
 
 export function AppRouter() {
   return (
@@ -17,12 +20,20 @@ export function AppRouter() {
         >
           <Route
             index
-            element={<h1>Home Page</h1>}
+            element={
+              <Suspense fallback={<PageLoader />}>
+                <HomePage />
+              </Suspense>
+            }
           />
         </Route>
         <Route
           path={'/*'}
-          element={<NotFoundPage />}
+          element={
+            <Suspense fallback={<PageLoader />}>
+              <NotFoundPage />
+            </Suspense>
+          }
         />
       </Routes>
     </BrowserRouter>

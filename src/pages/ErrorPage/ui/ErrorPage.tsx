@@ -1,6 +1,6 @@
 import cls from './ErrorPage.module.scss';
 
-export function ErrorPage() {
+function ErrorPage() {
   return (
     <main className={cls.main}>
       <h1>🤭 Oops! Something went wrong...</h1>
@@ -13,3 +13,5 @@ export function ErrorPage() {
     </main>
   );
 }
+
+export default ErrorPage;

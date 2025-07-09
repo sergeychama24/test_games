@@ -1,11 +1,11 @@
 import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
 
-import './shared/styles/index.scss';
+import { App } from '@/app/App';
 
 const root = createRoot(document.querySelector('#root')!);
 root.render(
   <StrictMode>
-    <h1>Hello</h1>
+    <App />
   </StrictMode>,
 );

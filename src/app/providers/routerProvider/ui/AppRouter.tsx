@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { MainLayout } from '@/shared/ui/MainLayout/MainLayout';
+import { MainLayout } from '@/shared/ui/MainLayout';
+import { NotFoundPage } from '@/pages/NotFoundPage';
 
 export function AppRouter() {
   return (
@@ -21,7 +22,7 @@ export function AppRouter() {
         </Route>
         <Route
           path={'/*'}
-          element={<h1>Page Not Found</h1>}
+          element={<NotFoundPage />}
         />
       </Routes>
     </BrowserRouter>

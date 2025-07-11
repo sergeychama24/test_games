@@ -7,14 +7,6 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
     hot: true,
     open: true,
     historyApiFallback: true,
-    proxy: [
-      {
-        context: ['/'],
-        target: 'https://belparyaj.com',
-        changeOrigin: true,
-        secure: false,
-      },
-    ],
   };
 }
 

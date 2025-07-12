@@ -14,11 +14,15 @@
   --font-lg: var(--font-size-lg) / var(--font-line-lg) var(--font-family-main);
 
   --bg-color: #000;
+  --bg-alt: #1C1C1C;
   --text-color: #FFF;
+  --text-additional: rgb(255 255 255 / 50%);
   --accent-color: #F19021;
+  --accent-color-2: #F0DA7D;
   --secondary-color: #BA8E47;
-
   --space-sm: 10px;
   --space-md: 20px;
   --space-lg: 30px;
+
+  --border-radius: 10px
 }

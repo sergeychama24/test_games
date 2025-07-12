@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.filter {
+  flex: 1;
+}
+
+.search {
+  min-width: 460px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font: var(--font-sm);
+  padding-block: 5px;
+  margin-bottom: var(--space-sm);
+}
+
+.loaderContainer {
+  height: 100%;
+  margin: auto;
+  width: fit-content;
+}
+
+.loaderSize {
+  width: 80px;
+  height: 80px;
+}

@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  height: 100dvh;
+}
+
+.link {
+  color: var(--accent-color);
+  transition: color 250ms;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}

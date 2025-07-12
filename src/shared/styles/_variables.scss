@@ -1,0 +1,28 @@
+:root {
+  --font-family-main: 'Roboto';
+
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+
+  --font-line-sm: 18px;
+  --font-line-md: 20px;
+  --font-line-lg: 24px;
+
+  --font-sm: var(--font-size-sm) / var(--font-line-sm) var(--font-family-main);
+  --font-md: var(--font-size-md) / var(--font-line-md) var(--font-family-main);
+  --font-lg: var(--font-size-lg) / var(--font-line-lg) var(--font-family-main);
+
+  --bg-color: #000;
+  --bg-alt: #1C1C1C;
+  --text-color: #FFF;
+  --text-additional: rgb(255 255 255 / 50%);
+  --accent-color: #F19021;
+  --accent-color-2: #F0DA7D;
+  --secondary-color: #BA8E47;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+
+  --border-radius: 10px
+}

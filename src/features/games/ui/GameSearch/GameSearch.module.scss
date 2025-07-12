@@ -1,0 +1,45 @@
+.gameSearch {
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-lg);
+  background-color: var(--bg-alt);
+  border-radius: var(--border-radius);
+}
+
+.heading {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.inputContainer {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.searchContainer {
+  display: flex;
+  flex: 1;
+  gap: var(--space-sm);
+  border: 1px solid var(--secondary-color);
+  padding: var(--space-sm);
+
+  & > input {
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: inherit;
+  }
+}
+
+.button {
+  background-color: var(--accent-color-2);
+  border: none;
+  font-weight: bold;
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-md);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}

@@ -5,6 +5,7 @@ cd proxy-server
 npm install
 npm run start
 
+cd ../
 npm install
 npm run start
 ```
